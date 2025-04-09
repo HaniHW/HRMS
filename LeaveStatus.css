@@ -1,0 +1,87 @@
+/* LeaveManagement.css */
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/*button.approve {
+  background-color: #007bff; /* Blue */
+/*}
+
+button.reject {
+  background-color: #dc3545; /* Red */
+/*}
+
+button:disabled {
+  background-color: #cccccc; /* Grey when disabled */
+/*  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.8;
+}*/
+/* Add space between buttons */
+button.approve,
+button.reject {
+  margin-right: 10px; /* Adjust the gap as needed */
+}
+
+button.approve {
+  background-color: green; /* Customize the button color */
+  color: white;
+}
+
+button.reject {
+  background-color: red; /* Customize the button color */
+  color: white;
+}
+
+button:disabled {
+  background-color: grey; /* Disabled button style */
+  cursor: not-allowed;
+}
+
+
+/* Custom Styles for Leave Status */
+.approved {
+  color: #38a169; /* Green */
+  font-weight: bold;
+}
+
+.rejected {
+  color: #e53e3e; /* Red */
+  font-weight: bold;
+}
+
+.pending {
+  color: #d69e2e; /* Yellow */
+  font-weight: bold;
+}

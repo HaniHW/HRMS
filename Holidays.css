@@ -1,0 +1,167 @@
+/* Main container */
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fc;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Content Section */
+.content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.header p {
+  margin: 0;
+  color: gray;
+  font-size: 14px;
+}
+
+/* Search and Profile */
+.search-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile span {
+  font-weight: 600;
+}
+
+.profile p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+/* Actions Section */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Search Box */
+.search-box {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.search-box:focus {
+  border-color: #4c63f5;
+}
+
+/* Add Holiday Button */
+.add-btn {
+  padding: 10px 20px;
+  background-color: #4c63f5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #3a4acc;
+}
+
+/* Table Styles */
+.holiday-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.holiday-table th, .holiday-table td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.holiday-table th {
+  background-color: #f7f7f7;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.holiday-table td {
+  font-size: 14px;
+  color: #555;
+}
+
+.holiday-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Status Labels */
+.status-labels {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.upcoming {
+  color: #4c63f5;
+  font-weight: 600;
+}
+
+.past {
+  color: gray;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .search-profile {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .search-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,259 @@
+/* Main container */
+.main-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f9fb;
+}
+
+/* Content section */
+.content {
+  flex: 1;
+  padding: 20px 30px;
+  overflow-y: auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.header p {
+  margin: 5px 0 0;
+  color: gray;
+  font-size: 14px;
+}
+
+.search-box {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+}
+
+/* Search and Add Button */
+/*.search-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-add input {
+  padding: 10px 15px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}*/
+
+/* Jobs container */
+.jobs-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Column */
+.job-column {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  width: 32%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+/* Column Titles */
+.job-column-title {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.job-column-title.active {
+  color: #d97706;
+}
+
+.job-column-title.inactive {
+  color: #b91c1c;
+}
+
+.job-column-title.completed {
+  color: #047857;
+}
+
+/* Job card */
+.job-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.job-header h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.job-header span {
+  font-size: 13px;
+  color: gray;
+}
+
+/* Tags */
+.job-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* Footer */
+.job-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: gray;
+}
+
+/* Scrollbar hidden */
+.job-column::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .jobs-container {
+    flex-direction: column;
+  }
+
+  .job-column {
+    width: 100%;
+  }
+
+  .search-add input {
+    width: 60%;
+  }
+
+  .add-btn {
+    padding: 8px 15px;
+  }
+}
+
+/* Overlay effect to dim the background */
+.content.overlay {
+  background-color: rgba(0, 0, 255, 0.1);  /* Slight blue background */
+  transition: background-color 0.3s ease;
+}
+
+/* Modal background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 600px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Style the buttons */
+.cancel-btn, .add-btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+}
+
+.add-btn {
+  background-color: #6aaae6;
+  color: white;
+}
+
+/* Style for the search and add job container */
+.search-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Add gap between search and add job button */
+}
+
+.search-add input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-add button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:#7091d6; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px; /* Gap between search bar and button */
+}
+
+.search-add button:hover {
+  background-color:#4CAF50;   /* Button hover effect */
+}
+

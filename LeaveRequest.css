@@ -1,0 +1,161 @@
+/* Styling for the leave request form */
+.leave-request-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 50px;  /* Add some top margin */
+}
+
+.leave-request-form h1 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.leave-request-form .form-select,
+.leave-request-form .form-control,
+.leave-request-form textarea {
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.leave-request-form .form-control:focus,
+.leave-request-form .form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.leave-request-form textarea {
+  resize: vertical;
+}
+
+.leave-request-form .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.leave-request-form .btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+}
+
+.leave-request-form .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.leave-request-form .btn:hover {
+  opacity: 0.9;
+}
+
+.leave-request-form .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.leave-request-form .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Add some spacing for form inputs */
+.leave-request-form .row.g-3 {
+  margin-bottom: 15px;
+}
+
+.leave-request-form .container {
+  margin-bottom: 15px;
+}
+
+.leave-request-form p.para {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Adjust the sidebar and content layout */
+.d-flex {
+  display: flex;
+}
+
+.mainContent {
+  flex-grow: 1; /* Ensures the content takes up remaining space */
+}
+
+.col-md-60 {
+  max-width: 100%; /* Ensures the content takes up full width */
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.see-leaves-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.see-leaves-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.03);
+}
+
+/* Base button style */
+.custom-btn {
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Back button */
+.back-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.back-btn:hover {
+  background-color: #5a6268;
+  transform: scale(1.03);
+}
+
+/* Submit button */
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+  transform: scale(1.03);
+}
+
+/* Optional: Make both buttons look aligned and centered */
+.col-12.d-flex.justify-content-between {
+  gap: 10px;
+}

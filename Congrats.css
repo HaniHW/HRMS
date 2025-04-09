@@ -1,0 +1,44 @@
+.screen {
+  display: flex;
+  height: 100vh;
+}
+
+.left-section {
+  flex: 1;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration {
+  max-width: 80%;
+  height: auto;
+}
+
+.right-section {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #28a745;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.congrats-icon {
+  font-size: 4rem;
+  color: #28a745;
+  margin-bottom: 1rem;
+}

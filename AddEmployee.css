@@ -1,0 +1,50 @@
+/* Center the main content properly */
+
+ 
+/* Content wrapper */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+.mainContent{
+  border-radius: 5px;
+}
+
+
+/* Form container adjustments */
+.w-100 {
+  width: 100%;
+}
+
+.w-md-75 {
+  width: 75%;  /* Adjust width for medium screens and up */
+}
+
+.form-control, .form-select {
+  width: 100%;     /* Ensures input fields and selects take full width */
+}
+
+/* The button group adjustments */
+.col-12.d-flex.justify-content-between {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;   /* Adjust space above buttons */
+}
+
+
+.btns {
+  display: flex;
+  justify-content: space-between; /* Buttons ko left & right corner pe le jata hai */
+  padding: 0 20px; /* Optional: thoda andar karne ke liye */
+  margin-top: 20px; /* Optional: upar se gap */
+}
+
+.btns .backBtn, .btns .nextBtn {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

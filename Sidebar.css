@@ -1,0 +1,117 @@
+
+.sidebar {
+   width: 230px;
+  
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 3px;
+  cursor: pointer;
+}
+
+.sidebar ul .active {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+/* Sidebar.css */
+
+/* Custom Modal Style */
+/* Sidebar.css */
+
+/* Custom Modal Style */
+.logout-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Darker semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease; /* Smooth fade-in animation */
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px; /* Rounded corners */
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  animation: zoomIn 0.5s ease; /* Zoom-in effect */
+}
+
+.modal-content h4 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.modal-actions button {
+  width: 120px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal-actions button:hover {
+  transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  margin-right: 15px;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Darker gray */
+}
+
+.btn-danger:hover {
+  background-color: #c0392b; /* Darker red */
+}
+
+/* Animation for modal opening */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation for modal zoom-in effect */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

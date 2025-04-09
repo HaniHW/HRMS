@@ -1,0 +1,135 @@
+/* Main container */
+.main-container {
+  display: flex;
+  height: 100vh;
+  background: #f9f9f9;
+}
+
+/* Content wrapper */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header p {
+  margin: 0;
+  color: gray;
+}
+
+.search-box {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 250px;
+}
+
+/* Search bar */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Departments Container */
+.departments-container {
+  display: grid;
+  grid-template-columns: repeat(2,500px);
+  gap: 20px;
+}
+.departments-container .department-card .department-header .view{
+  color:#4a90e2;
+  cursor: pointer;
+  
+}
+
+/* Department card */
+.department-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.department-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.department-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.department-header a {
+  font-size: 12px;
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.department-header span {
+  color: gray;
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+/* Department members */
+.department-members {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.department-members li {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.department-members li:last-child {
+  border-bottom: none;
+}
+
+.profile-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Scrollbar (optional beautification) */
+.content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
